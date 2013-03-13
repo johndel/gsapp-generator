@@ -1,0 +1,48 @@
+source 'https://rubygems.org'
+
+gem 'rack'
+gem 'rails'
+gem 'mysql2'
+
+# Gems used only for assets and not required
+# in production environments by default.
+group :assets do
+  gem 'sass-rails'
+  gem 'coffee-rails'
+  gem 'uglifier'
+end
+
+gem 'jquery-rails'
+gem 'capistrano'
+
+# Javascript Libraries for better / easier update
+gem 'compass-rails'
+
+
+group :test, :development do
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'guard-rspec'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
+  gem 'spork'
+  gem 'guard-spork'
+  gem 'launchy'
+  gem 'pry-remote'
+  gem 'pry-rails'
+  gem 'pry-stack_explorer'
+  gem 'pry-debugger'
+  gem 'simplecov'
+  gem 'database_cleaner'
+  gem 'rb-inotify'
+end
+
+group :development do
+  gem 'rails_best_practices'
+  gem 'brakeman'
+  gem 'letter_opener'
+  gem 'bullet'
+  gem 'rack-mini-profiler'
+  gem 'better_errors'
+end
+

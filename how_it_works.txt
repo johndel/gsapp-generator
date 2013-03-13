@@ -1,0 +1,1 @@
+Type `rails new app_name -m app_template.rb --skip-test-unit -d mysql`
